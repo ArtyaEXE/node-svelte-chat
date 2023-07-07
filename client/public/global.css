@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+* :root {
+  margin: 0;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 92.5vh;
+}
+
+html,
+body,
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  background: #17212b;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #5eb5f7;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0;
+  color: #fff3fb;
+  padding: 7px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  padding: 10px;
+  color: #fff3fb;
+  background-color: #3d9feb;
+  border: 1px solid transparent;
+  border-top-left-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.message:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.sender-name {
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.time {
+  text-align: right;
+  font-size: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  background-color: transparent;
+  padding: 5px;
+  position: relative;
+  margin: 0;
+  color: #fff3fb;
+  border: 2px solid #17212b;
+}
+
+input:focus {
+  border-color: #5eb5f7;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+input::placeholder {
+  color: #fff3fb;
+  font-size: 16px;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
